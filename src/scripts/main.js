@@ -7,8 +7,8 @@ const spiderWidth = spider.offsetWidth;
 const wallHeight = wall.offsetHeight;
 const wallWidth = wall.offsetWidth;
 
-const leftCoord = (wallWidth / 2) - (spiderWidth / 2);
-const topCoord = (wallHeight / 2) - (spiderHeight / 2);
+const leftCoord = (wallWidth / 2) - (spiderWidth / 2) - 10;
+const topCoord = (wallHeight / 2) - (spiderHeight / 2) - 10;
 
 spider.style.left = `${leftCoord}px`;
 spider.style.top = `${topCoord}px`;
