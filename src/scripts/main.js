@@ -2,13 +2,13 @@
 
 const wall = document.querySelector('.wall');
 const spider = document.querySelector('.spider');
-const spiderHeight = spider.offsetHeight;
-const spiderWidth = spider.offsetWidth;
-const wallHeight = wall.offsetHeight;
-const wallWidth = wall.offsetWidth;
+const spiderHeight = spider.clientHeight;
+const spiderWidth = spider.clientWidth;
+const wallHeight = wall.clientHeight;
+const wallWidth = wall.clientWidth;
 
-const leftCoord = (wallWidth / 2) - (spiderWidth / 2) - 10;
-const topCoord = (wallHeight / 2) - (spiderHeight / 2) - 10;
+const leftCoord = wallWidth / 2 - spiderWidth / 2;
+const topCoord = wallHeight / 2 - spiderHeight / 2;
 
 spider.style.left = `${leftCoord}px`;
 spider.style.top = `${topCoord}px`;
